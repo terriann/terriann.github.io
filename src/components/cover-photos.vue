@@ -13,7 +13,7 @@
 
 <script>
 export default {
-  name: 'coverphoto',
+  name: 'cover-photos',
   data () {
     return {
       msg: 'Welcome to Your *New* Vue.js App'

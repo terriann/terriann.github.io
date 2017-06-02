@@ -1,13 +1,19 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
+  	<cover-photos></cover-photos>
     <router-view></router-view>
   </div>
 </template>
 
 <script>
+
+import CoverPhotos from './components/cover-photos.vue'
+
 export default {
-  name: 'app'
+  name: 'app',
+  components: {
+    'cover-photos': CoverPhotos
+  }
 }
 </script>
 
