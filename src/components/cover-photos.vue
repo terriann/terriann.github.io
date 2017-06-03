@@ -3,8 +3,8 @@
     <div class="fslider" data-speed="3000" data-pause="5000" data-animation="fade" data-arrows="false" data-pagi="false" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; background-color: #333;">
       <div class="flexslider" style="height: 100% !important;">
         <div class="slider-wrap" style="height: inherit !important;">
-          <div class="slide full-screen force-full-screen" style="background: url('../static/images/1.jpg') center right; background-size: cover; height: 100% !important;"></div>
-          <div class="slide full-screen force-full-screen" style="background: url('../static/images/2.jpg') center right; background-size: cover; height: 100% !important;"></div>
+          <div class="slide full-screen force-full-screen" id="slide1"></div>
+          <div class="slide full-screen force-full-screen" id="slide2"></div>
         </div>
       </div>
     </div>
@@ -22,6 +22,15 @@ export default {
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+#slide1 {
+  background: url('./../assets/images/1.jpg') center right;
+  background-size: cover;
+  height: 100% !important;
+}
+#slide2 {
+  background: url('./../assets/images/2.jpg') center right;
+  background-size: cover;
+  height: 100% !important;
+}
 </style>
