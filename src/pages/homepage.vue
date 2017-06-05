@@ -15,9 +15,35 @@
                         <span>Building websites since 2000. I specialize in creative problem solving; combining over a decade of front and backend web development experience with a dash of marketing, a tablespoon of social media, a hint of common sense and user empathy and a whole lot of passion.</span>
                     </div>
 
-                    <a href="#" data-scrollto="#section-contact" data-easing="easeInOutExpo" data-speed="1250" data-offset="60" class="button button-dark button-black nomargin">Get Custom Quote</a>
+                    <div class="line topmargin-sm bottommargin-sm"></div>
+
+                    <div id="section-employment" class="row clearfix">
+
+                      <div class="col-md-6">
+
+                        <h3>Freelance</h3>
+
+                        <p>I take on limited freelance opportunities but if you have an interesting project or problem that you need solved for your business please do get in touch. Quotes are customized based on a project’s needs assessment survey is completed. <router-link to="/contact">Contact me</router-link> to get the conversation started.</p>
+
+                      </div>
+
+                      <div class="col-md-6">
+
+                        <h3>Recruiters &amp; Employers</h3>
+
+                        <p>I am currently employed full time. If you have a project that you think I am a good fit for I’m always interested in hearing about interesting roles and opportunities and possibly share it through my network.</p>
+
+                        <a href="/static/resume.pdf" class="button button-dark button-black nomargin">Download Resume</a>
+
+                      </div>
+
+                      <div class="clear"></div>
+                    </div>
+
+
 
                     <div class="line topmargin-lg bottommargin-lg"></div>
+
 
                     <div id="section-services" class="page-section">
 
@@ -146,4 +172,7 @@
 </script>
 
 <style>
+#section-employment p {
+    color: #666;
+}
 </style>

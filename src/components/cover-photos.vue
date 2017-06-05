@@ -24,12 +24,12 @@ export default {
 
 <style scoped>
 #slide1 {
-  background: url('./../assets/images/1.jpg') center right;
+  background: url('./../assets/images/3.jpg') center right;
   background-size: cover;
   height: 100% !important;
 }
 #slide2 {
-  background: url('./../assets/images/2.jpg') center right;
+  background: url('./../assets/images/4.jpg') center right;
   background-size: cover;
   height: 100% !important;
 }
