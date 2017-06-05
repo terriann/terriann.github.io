@@ -16,25 +16,31 @@
           ============================================= -->
           <div id="portfolio" class="portfolio grid-container portfolio-nomargin portfolio-full portfolio-3 portfolio-masonry mixed-masonry clearfix">
 
-            <article class="portfolio-item pf-media pf-icons wide">
+            <article class="portfolio-item pf-media pf-icons wide" v-for="item in item_collection">
               <div class="portfolio-image imagescale">
-                <a href="#">
-                  <img src="one-page/images/portfolio/mixed/1.jpg" alt="Open Imagination">
-                </a>
+                <router-link :to="item.url">
+                  <img :src="item.thumbnail" :alt="item.title">
+                </router-link>
                 <div class="i-overlay on-hover" style="background: rgba(255,255,255,0.7);">
-                  <a href="#"><i class="icon-line-plus"></i></a>
+                  <router-link :to="item.url"><i class="icon-line-plus"></i></router-link>
                 </div>
               </div>
               <div class="portfolio-desc">
-                <h3><a href="#">Open Imagination</a></h3>
+                <h3><router-link :to="item.url">{{ item.title }}</router-link></h3>
                 <span><a href="#">Media</a>, <a href="#">Icons</a></span>
               </div>
             </article>
 
+
+
+
+
+            
+
             <article class="portfolio-item pf-illustrations">
               <div class="portfolio-image imagescale">
                 <a href="#">
-                  <img src="one-page/images/portfolio/mixed/2.jpg" alt="Locked Steel Gate">
+                  <img src="./../assets/images/portfolio/thumb/2.jpg" alt="Locked Steel Gate">
                 </a>
                 <div class="i-overlay on-hover" style="background: rgba(255,255,255,0.7);">
                   <a href="#"><i class="icon-line-plus"></i></a>
@@ -49,7 +55,7 @@
             <article class="portfolio-item pf-graphics pf-uielements">
               <div class="portfolio-image imagescale">
                 <a href="#">
-                  <img src="one-page/images/portfolio/mixed/3.jpg" alt="Mac Sunglasses">
+                  <img src="./../assets/images/portfolio/thumb/3.jpg" alt="Mac Sunglasses">
                 </a>
                 <div class="i-overlay on-hover" style="background: rgba(255,255,255,0.7);">
                   <a href="#"><i class="icon-line-plus"></i></a>
@@ -64,7 +70,7 @@
             <article class="portfolio-item pf-media pf-icons wide">
               <div class="portfolio-image imagescale">
                 <a href="#">
-                  <img src="one-page/images/portfolio/mixed/4.jpg" alt="Open Imagination">
+                  <img src="./../assets/images/portfolio/thumb/4.jpg" alt="Open Imagination">
                 </a>
                 <div class="i-overlay on-hover" style="background: rgba(255,255,255,0.7);">
                   <a href="#"><i class="icon-line-stack-2"></i></a>
@@ -79,7 +85,7 @@
             <article class="portfolio-item pf-uielements pf-icons">
               <div class="portfolio-image imagescale">
                 <a href="#">
-                  <img src="one-page/images/portfolio/mixed/11.jpg" alt="Backpack Contents">
+                  <img src="./../assets/images/portfolio/thumb/11.jpg" alt="Backpack Contents">
                 </a>
                 <div class="i-overlay on-hover" style="background: rgba(255,255,255,0.7);">
                   <a href="#"><i class="icon-line-play"></i></a>
@@ -94,7 +100,7 @@
             <article class="portfolio-item pf-media pf-icons">
               <div class="portfolio-image imagescale">
                 <a href="#">
-                  <img src="one-page/images/portfolio/mixed/6.jpg" alt="Open Imagination">
+                  <img src="./../assets/images/portfolio/thumb/6.jpg" alt="Open Imagination">
                 </a>
                 <div class="i-overlay on-hover" style="background: rgba(255,255,255,0.7);">
                   <a href="#"><i class="icon-line-plus"></i></a>
@@ -109,7 +115,7 @@
             <article class="portfolio-item pf-uielements pf-icons">
               <div class="portfolio-image imagescale">
                 <a href="#">
-                  <img src="one-page/images/portfolio/mixed/7.jpg" alt="Backpack Contents">
+                  <img src="./../assets/images/portfolio/thumb/7.jpg" alt="Backpack Contents">
                 </a>
                 <div class="i-overlay on-hover" style="background: rgba(255,255,255,0.7);">
                   <a href="#"><i class="icon-line-play"></i></a>
@@ -135,12 +141,19 @@
 
 
 <script>
-
-  export default {
-    name: 'portfolio',
-    components: {
+export default {
+  name: 'portfolio',
+  components: {
+  },
+  created () {
+  },
+  computed:
+  {
+    item_collection () {
+      return this.$store.state.portfolio.items
     }
   }
+}
 </script>
 
 <style>
