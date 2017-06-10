@@ -42,15 +42,20 @@
  @import "./assets/css/media-agency/fonts.css";
  @import "./assets/css/responsive.css";
 
-#wrapper {
+#app  {
+  #wrapper {
     margin: 0;
     width: 75%;
     box-shadow: none;
+  }
+  
+  .content-wrap {
+    padding: 40px 0;
+  }
+
+  .container-fluid {
+    padding-left: 120px;
+    padding-right: 120px;
+  }
 }
-
-.content-wrap {
-  padding: 40px 0;
-}
-
-
 </style>

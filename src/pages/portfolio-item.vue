@@ -2,23 +2,23 @@
 
 <!-- Content
 ============================================= -->
-<section id='content'>
+<section id="content">
 
-  <div class='content-wrap'>
+  <div class="content-wrap">
 
-    <div id='section-about' class='container-fluid page-section clearfix'>
+    <div id="section-about" class="container-fluid page-section clearfix">
 
-      <div id='section-portfolio' class='page-section'>
+      <div id="section-portfolio" class="page-section">
 
-        <span class=''>Portfolio Item</span>
-        <h1 class='bottommargin'>{{ title}}</h1>
+        <span class="">Portfolio Item</span>
+        <h1 class="bottommargin">{{ title}}</h1>
 
 
-          <div class='postcontent bothsidebar nobottommargin'>
+          <div class="postcontent bothsidebar nobottommargin">
 
             <!-- Portfolio Single Content
             ============================================= -->
-            <div class='col_full portfolio-single-content'>
+            <div class="col_full portfolio-single-content">
               <p>Thank you for your interest. More about this project will be coming soon.</p>
               <!-- Portfolio Single - Description End -->
 
@@ -92,5 +92,5 @@ export default
 }
 </script>
 
-<style>
+<style lang="scss"`>
 </style>
