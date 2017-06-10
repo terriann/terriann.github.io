@@ -1,6 +1,6 @@
 # terrianncreativeportfolio.com
 
-> A Vue.js project
+> My first Vue.js project - a portfolio site I put together using a theme from Themeforest and adapted for vue.js
 
 ## Build Setup
 
@@ -16,6 +16,11 @@ npm run build
 
 # build for production and view the bundle analyzer report
 npm run build --report
+
+# build, copy & deploy to github as master branch (use branch source in place)
+npm run deploy
+
+h2. Coming Soon...
 
 # run unit tests
 npm run unit
