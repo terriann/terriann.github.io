@@ -27,7 +27,11 @@
               </div>
               <div class="portfolio-desc">
                 <h3><router-link :to="item.url">{{ item.title }}</router-link></h3>
-                <span><a href="#">Media</a>, <a href="#">Icons</a></span>
+                <span v-for="tag in item.tags" class="item">
+                  {{ tag }}
+                </span>
+
+
               </div>
             </article>
 
@@ -61,4 +65,11 @@ export default {
 </script>
 
 <style>
+.portfolio-desc span {
+  display: inline;
+
+}
+.item + .item:before {
+  content: ", ";
+}
 </style>
