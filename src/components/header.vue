@@ -68,6 +68,18 @@ export default {
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style lang="scss">
+.device-xxs #header-wrap {
+  .container-fluid {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .header-social-set {
+    margin-top: 17px;
+    
+    a:nth-child(3) {
+      clear:left;
+    }
+  }
+}
 </style>
