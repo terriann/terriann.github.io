@@ -34,30 +34,20 @@
 </script>
 
 <style lang="scss">
-  @import '../node_modules/bootstrap/dist/css/bootstrap.css';
-  @import './assets/css/style.css';
- @import "./assets/css/media-agency/media-agency.css";
- @import "./assets/css/font-icons.css";
- @import "./assets/css/et-line.css";
- @import "./assets/css/animate.css";
- @import "./assets/css/magnific-popup.css";
- @import "./assets/css/media-agency/fonts.css";
- @import "./assets/css/responsive.css";
+@import '../node_modules/bootstrap/dist/css/bootstrap.css';
+@import './assets/css/style.css';
+@import "./assets/css/media-agency/media-agency.css";
+@import "./assets/css/font-icons.css";
+@import "./assets/css/et-line.css";
+@import "./assets/css/animate.css";
+@import "./assets/css/magnific-popup.css";
+@import "./assets/css/media-agency/fonts.css";
+@import "./assets/css/responsive.css";
 
 #app  {
-  #wrapper {
-    margin: 0;
-    width: 75%;
-    box-shadow: none;
-  }
   
   .content-wrap {
     padding: 40px 0;
-  }
-
-  .container-fluid {
-    padding-left: 120px;
-    padding-right: 120px;
   }
 }
 </style>
