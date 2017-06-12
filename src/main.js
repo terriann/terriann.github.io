@@ -12,10 +12,6 @@ Vue.use(Vuex)
 import DataStore from './store.js'
 const store = new Vuex.Store(DataStore)
 
-// Global - may want to move this to app
-require('../node_modules/bootstrap/dist/css/bootstrap.css')
-require('./assets/css/style.css')
-
 /* eslint-disable no-new */
 new Vue({
   el: '#app',

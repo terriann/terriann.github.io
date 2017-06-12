@@ -34,6 +34,8 @@
 </script>
 
 <style lang="scss">
+  @import '../node_modules/bootstrap/dist/css/bootstrap.css';
+  @import './assets/css/style.css';
  @import "./assets/css/media-agency/media-agency.css";
  @import "./assets/css/font-icons.css";
  @import "./assets/css/et-line.css";
