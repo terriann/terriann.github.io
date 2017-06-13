@@ -30,7 +30,7 @@
 
                     <p>I am currently employed full time and not actively pursuing new roles. If you have a project that you think I am a good fit for I may be interested in hearing about interesting roles and opportunities and possibly share it through my network.</p>
 
-                    <a href="/static/resume.pdf" class="button button-dark button-black nomargin">Download Resume</a>
+                    <a href="/static/pdf/terri-swallow-senior-webdeverloper.pdf" target="_blank" class="button button-dark button-black nomargin">Download Resume</a>
 
                   </div>
 
