@@ -31,82 +31,27 @@
 
           <div class="col-md-6">
 
-            <h3>Objective</h3>
+            <h3>Entrepreneurial Work</h3>
 
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa repellendus adipisci laborum placeat delectus labore cupiditate deserunt minus numquam consequatur esse, hic at earum illo animi eaque et, dolorem quo qui eos? Quam rerum possimus maxime veniam aut ratione eveniet aliquid cumque aspernatur ipsum libero quaerat, nam. Ad, sunt, error!</p>
+            <p>I 2015 I launched a physical product, Mini Barn Quilts. A under $20 wooden craft kit. Inspired by traditional quilt locks these laser cut pieces could be decorated and assembled into decorative wall hangings. I had designed, manufactured, branded, marketed and sold them through online stores (Etsy, Shopify and WooCommerce.) Shortly after launching I was asked to be part of a 1-year feature in Country Living Magazine, a Hearst Publication. I designed ten licensed project kits and each was featured in one of the 10 annual issues of Country Living.</p>
 
           </div>
 
           <div class="col-md-6">
 
-            <h3>Future Endaevours</h3>
 
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa repellendus adipisci laborum placeat delectus labore cupiditate deserunt minus numquam consequatur esse, hic at earum illo animi eaque et, dolorem quo qui eos? Quam rerum possimus maxime veniam aut ratione eveniet aliquid cumque aspernatur ipsum libero quaerat, nam. Ad, sunt, error!</p>
-
-          </div>
-
-          <div class="clear"></div>
-        </div>
-
-
-        <div class="row clearfix">
-
-          <div class="col-md-6 bottommargin clearfix">
-
-            <div class="fancy-title title-border">
-              <h4>My Skills</h4>
-            </div>
-
-            <ul class="skills">
-              <li data-percent="80">
-                <span>Wordpress</span>
-                <div class="progress">
-                  <div class="progress-percent"><div class="counter counter-inherit counter-instant"><span data-from="0" data-to="80" data-refresh-interval="30" data-speed="1000"></span>%</div></div>
-                </div>
-              </li>
-              <li data-percent="60">
-                <span>CSS3</span>
-                <div class="progress">
-                  <div class="progress-percent"><div class="counter counter-inherit counter-instant"><span data-from="0" data-to="60" data-refresh-interval="30" data-speed="1000"></span>%</div></div>
-                </div>
-              </li>
-              <li data-percent="90">
-                <span>HTML5</span>
-                <div class="progress">
-                  <div class="progress-percent"><div class="counter counter-inherit counter-instant"><span data-from="0" data-to="90" data-refresh-interval="30" data-speed="1000"></span>%</div></div>
-                </div>
-              </li>
-              <li data-percent="70">
-                <span>jQuery</span>
-                <div class="progress">
-                  <div class="progress-percent"><div class="counter counter-inherit counter-instant"><span data-from="0" data-to="70" data-refresh-interval="30" data-speed="1000"></span>%</div></div>
-                </div>
-              </li>
-            </ul>
-
-          </div>
-
-          <div class="col-md-6 bottommargin clearfix">
-
-            <div class="fancy-title title-border">
-              <h4>Twitter Feed</h4>
-            </div>
-
-            <div class="fslider customjs testimonial twitter-scroll twitter-feed" data-username="envato" data-count="3" data-animation="slide" data-arrows="false">
-              <div class="flexslider" style="width: auto;">
-                <div class="slider-wrap">
-                  <div class="slide"></div>
-                </div>
+            <div class="thumbnail">
+              <img alt="Mini Barn Quilts.com" src="./../../static/images/portfolio/thumb/minibarnquilts.png" style="display: block;">
+              <div class="caption">
+                <h3>Mini Barn Quilts</h3>
+                <p>Learn more about Mini Barn Quilts and my roles, responsibilities and successes with this project.</p>
+                <a href="#" class="btn btn-primary" role="button">View Portfolio Page</a>
               </div>
             </div>
-
           </div>
 
           <div class="clear"></div>
-
         </div>
-
-
         </div>
 
       </div>
@@ -120,6 +65,15 @@
   export default {
     name: 'about',
     components: {
+    },
+    created () {
+    },
+    computed:
+    {
+      item_list () {
+        let arr = [this.$store.state.portfolio.items.minibarnquilts]
+        return arr
+      }
     }
   }
 </script>
