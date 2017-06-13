@@ -28,8 +28,6 @@
               <span v-for="tag in item.tags" class="item">
                 {{ tag }}
               </span>
-
-
             </div>
           </article>
 
