@@ -13,7 +13,7 @@
         <div class="row clearfix">
 
           <div class="col-md-8">
-            <h4>Located in Central Massachusetts, USA</h4>
+            <h4>Located in Vermont, USA</h4>
             <hr>
             <div style="font-size: 16px; line-height: 1.7;">
               <p>If you are interested in getting in touch for consulting sessions or projects please use the button below to get in touch.</p>
